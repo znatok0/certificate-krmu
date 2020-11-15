@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::view('/', 'welcome');
+Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('dashboard');
 })->name('dashboard');
+use App\Http\Controllers\MainController;
+Route::post('/full_name', [ MainController::class, 'getImage' ]);
