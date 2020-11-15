@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-        
+        <x-jet-welcome>
     </body>
 </html>
