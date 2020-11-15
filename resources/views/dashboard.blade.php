@@ -8,8 +8,10 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <input class="fname-input" type="text" placeholder="Введите ФИО" style="margin: 5px;">
-                
+                <x-jet-input placeholder="Введите ФИО"></x-jet-input>
+                {{-- <x-jet-dropdown>Dropdown</x-jet-dropdown-link> --}}
+                <img src="/img/Cert.jpg" alt="certificate">
+                <x-jet-button>Скачать</x-jet-button>
             </div>
         </div>
     </div>
